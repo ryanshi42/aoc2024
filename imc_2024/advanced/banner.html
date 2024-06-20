@@ -1,0 +1,86 @@
+<p>
+    <b>Program time limit: 3 seconds</b>
+    <br>
+    <b>Program memory limit: 512 MB</b>
+</p>
+
+<p>
+    After extensive market research, it has been determined that the effectiveness of a company
+    banner is solely determined by the number of times the company's name appears on it.
+    In fact, there is still an effect even if there are other characters in between,
+    as long as the letters of the company's name are evenly spaced out.
+</p>
+<p>
+    You are given a banner, which is a string made up of only capital letters.
+    Your task is to find the number of times the subsequence <code class="d-inline-block">IMC</code> appears, with the three letters evenly spaced out.
+    That is, you want to find the number of unique triples $i < j < k$ such that
+</p>
+<ul>
+    <li>$j-i=k-j$,</li>
+    <li>The $i$th letter in the banner is an <code class="d-inline-block">I</code>,</li>
+    <li>The $j$th letter in the banner is an <code class="d-inline-block">M</code>, and</li>
+    <li>The $k$th letter in the banner is a <code class="d-inline-block">C</code>.</li>
+</ul>
+
+<h4 id="input">Input</h4>
+<p>
+    The first line of input contains the integer $N$, the number of characters in the banner.
+    <br>
+    The second line contains a string of $N$ uppercase letters, describing the banner.
+</p>
+<p>
+    You should read from standard input.
+</p>    
+
+<h4 id="constraints">Constraints</h4>
+<p>For all test cases:</p>
+<ul>
+    <li>$1 \le N \le 100\; 000$.</li>
+    <li>Each character of the string is an uppercase letter.</li>
+</ul>
+
+<p>Additionally:</p>
+<ul>
+    <li>For Subtask 1 (10% of points), $N \le 1000$.</li>
+    <li>For Subtask 2 (90% of points), there are no additional constraints.</li>
+</ul>
+
+
+<h4 id="output">Output</h4>
+<p>
+    Output a single integer, the number of times the subsequence <code class="d-inline-block">IMC</code> appears, with the three letters evenly spaced out.
+</p>
+<p>
+    You should write to standard output.
+</p>
+
+<h4 id="sample-input-1">Sample Input 1</h4>
+<pre><code>9
+IIXMMCIMC</code></pre>
+
+<h4 id="sample-output-1">Sample Output 1</h4>
+<pre><code>3</code></pre>
+
+<h4 id="explanation-1">Explanation 1</h4>
+<p>
+The 3 valid subsequences are indicated below.
+</p>
+<pre><code><span style="color: red">I</span>IXM<span style="color: red">M</span>CIM<span style="color: red">C</span>
+I<span style="color: red">I</span>X<span style="color: red">M</span>M<span style="color: red">C</span>IMC
+IIXMMC<span style="color: red">IMC</span></code></pre>
+
+<h4 id="sample-input-2">Sample Input 2</h4>
+<pre><code>6
+KIMCHI</code></pre>
+
+<h4 id="sample-output-2">Sample Output 2</h4>
+<pre><code>1</code></pre>
+
+<h4 id="input">Scoring</h4>
+<p>
+    For each subtask (worth 10% and 90% of points, as per the Constraints section),
+    your program will be run on multiple secret test cases one after another,
+    and if it produces the correct output for <b>all</b> test cases, it solves that subtask. 
+    Your program will receive the points for each subtask it solves.
+    Recall that your final score on the task is the score of your highest scoring submission.
+</p>

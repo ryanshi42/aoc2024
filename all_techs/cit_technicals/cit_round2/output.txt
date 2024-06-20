@@ -1,0 +1,6 @@
+F1 started at 19:00:01, lasted for 4 seconds
+    <Unknown> started at 19:00:01, lasted for 2 seconds
+    F2 started at 19:00:03, lasted for 1 seconds
+    F3 started at 19:00:04, lasted for 0 seconds
+    <Unknown> started at 19:00:01, lasted for 4 seconds
+    F3 started at 19:00:05, lasted for 0 seconds

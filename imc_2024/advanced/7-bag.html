@@ -1,0 +1,109 @@
+<p>
+    <b>Program time limit: 1 second</b>
+    <br>
+    <b>Program memory limit: 512 MB</b>
+</p>
+
+<p>
+    In most modern releases of the video game Tetris&trade;, the method the game uses to choose the next
+    piece for the player is done using what is known as a "7-bag randomiser".
+    This means that once the game starts, a "bag" containing 1 copy of each of the 7 pieces will be randomised,
+    and this decides the order for your next 7 pieces.
+    Each time a bag is emptied, a new bag is randomised, and this repeats itself until the game ends.
+</p>
+<p>
+    However in some versions of Tetris&trade;, in order to increase the level of variation, it will use a 14-bag randomiser.
+    This is similar with the only difference that every 14 pieces will contain exactly 2 copies of each of the 7 pieces.
+    Similarly, a 21-bag randomiser, a 28-bag randomiser, and so on are all possible.
+</p>
+<p>
+    You are given a sequence of Tetris&trade; pieces received from the start of the game.
+    What is the smallest bag size that could have been used to generate the Tetris&trade; pieces?
+</p>
+<p>
+    The 7 pieces are referred to by letters that each resembles:
+    <code class="d-inline-block">I</code>,
+    <code class="d-inline-block">O</code>,
+    <code class="d-inline-block">T</code>,
+    <code class="d-inline-block">J</code>,
+    <code class="d-inline-block">S</code>,
+    <code class="d-inline-block">Z</code> and
+    <code class="d-inline-block">L</code>.
+</p>
+
+<h4 id="input">Input</h4>
+<p>
+    The first line of input contains the integer $N$, the number of Tetris&trade; pieces that you receive.
+    <br>
+    The second line contain a string of $N$ characters, describing the Tetris&trade; pieces that you receive.
+</p>
+<p>
+    You should read from standard input.
+</p>    
+
+<h4 id="constraints">Constraints</h4>
+<p>For all test cases:</p>
+<ul>
+    <li>$1 \le N \le 300\; 000$.</li>
+    <li>
+        Each character of the string is either
+        <code class="d-inline-block">I</code>,
+        <code class="d-inline-block">O</code>,
+        <code class="d-inline-block">T</code>,
+        <code class="d-inline-block">J</code>,
+        <code class="d-inline-block">S</code>,
+        <code class="d-inline-block">Z</code> or
+        <code class="d-inline-block">L</code>.
+    </li>
+</ul>
+
+<p>Additionally:</p>
+<ul>
+    <li>For Subtask 1 (30% of points), $N \le 1000$.</li>
+    <li>For Subtask 2 (70% of points), there are no additional constraints.</li>
+</ul>
+
+
+<h4 id="output">Output</h4>
+<p>
+    Output a single integer, the smallest possible bag size that could have produced the given sequence of Tetris&trade; pieces
+</p>
+<p>
+    You should write to standard output.
+</p>
+
+<h4 id="sample-input-1">Sample Input 1</h4>
+<pre><code>9
+TSJZLIOTL
+</code></pre>
+
+<h4 id="sample-output-1">Sample Output 1</h4>
+<pre><code>7</code></pre>
+
+<h4 id="explanation-1">Explanation 1</h4>
+<p>
+    We can have a 7-bag randomiser, where the first 7 letters belong to the first bag and the last 2 letters belong to the second bag.
+</p>
+
+<h4 id="sample-input-2">Sample Input 2</h4>
+<pre><code>10
+TTTOJSZSLS
+</code></pre>
+
+<h4 id="sample-output-2">Sample Output 2</h4>
+<pre><code>21</code></pre>
+
+<h4 id="explanation-2">Explanation 2</h4>
+<p>
+    Since we have three <code class="d-inline-block">T</code>s in a row at the start, they must all belong to the same bag,
+    and so the smallest bag size has to be at least 21. In fact, 21 is the smallest possible bag size.
+</p>
+
+<h4 id="input">Scoring</h4>
+<p>
+    For each subtask (worth 30% and 70% of points, as per the Constraints section),
+    your program will be run on multiple secret test cases one after another,
+    and if it produces the correct output for <b>all</b> test cases, it solves that subtask. 
+    Your program will receive the points for each subtask it solves.
+    Recall that your final score on the task is the score of your highest scoring submission.
+</p>

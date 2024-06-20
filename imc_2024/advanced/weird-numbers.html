@@ -1,0 +1,76 @@
+<p>
+    <b>Program time limit: 1 second</b>
+    <br>
+    <b>Program memory limit: 512 MB</b>
+</p>
+
+<p>
+    Tim Estable hates maths. Learning his times tables was too hard.
+    Tim Estable realised however that most numbers were easy to deal with for him,
+    but he only had trouble with certain <b>weird</b> numbers.
+</p>
+<p>
+    A positive integer is a <b>weird</b> number if and only if there exist two identical adjacent digits in it. For example,
+</p>
+<ul>
+    <li>$119$ is weird.</li>
+    <li>$445755$ is weird.</li>
+    <li>$1$ is not weird.</li>
+    <li>$123$ is not weird.</li>
+</ul>
+</p>
+    Tim Estable gives you a single integer $N$, and asks you to find the smallest <b>non-weird</b> integer that is strictly greater than $N$.
+    Seeing as Tim Estable cannot even recite his times tables, it's now your job to help him.
+</p>
+
+<h4 id="input">Input</h4>
+<p>
+    The first and only line of input contains the integer $N$.
+</p>
+<p>
+    You should read from standard input.
+</p>    
+
+<h4 id="constraints">Constraints</h4>
+<p>For all test cases:</p>
+<ul>
+    <li>$1 \le N \le 10^{18}$.</li>
+</ul>
+
+<p>Additionally:</p>
+<ul>
+    <li>For Subtask 1 (30% of points), $1 \le N \le 100\; 000$.</li>
+    <li>For Subtask 2 (70% of points), there are no additional constraints.</li>
+</ul>
+
+<h4 id="output">Output</h4>
+<p>
+    Print the smallest integer strictly greater than $N$ which is <b>not</b> a weird number.
+</p>
+<p>
+    You should write to standard output.
+</p>
+
+<h4 id="sample-input-1">Sample Input 1</h4>
+<pre><code>343
+</code></pre>
+
+<h4 id="sample-output-1">Sample Output 1</h4>
+<pre><code>345</code></pre>
+
+
+<h4 id="explanation-1">Explanation 1</h4>
+
+<p>
+    The smallest integer that is strictly greater than 343 is 344.
+    Since 344 is a weird number, but 345 is not a weird number, the answer is 345.
+</p>
+
+<h4 id="input">Scoring</h4>
+<p>
+    For each subtask (worth 30% and 70% of points, as per the Constraints section),
+    your program will be run on multiple secret test cases one after another,
+    and if it produces the correct output for <b>all</b> test cases, it solves that subtask. 
+    Your program will receive the points for each subtask it solves.
+    Recall that your final score on the task is the score of your highest scoring submission.
+</p>
